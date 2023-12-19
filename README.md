@@ -1,8 +1,8 @@
 # opendkim-docker
 
 ```shell
-mkdir -p ./opendkim
-sudo chown -R "1000:1000" ./opendkim
+mkdir -p ./opendkim ./certs
+sudo chown -R "1000:1000" ./opendkim ./certs
 
 sudo docker build -t aoirint/opendkim .
 
