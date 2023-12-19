@@ -16,7 +16,5 @@ RUN <<EOF
   rm -rf /var/lib/apt/lists/*
 EOF
 
-ADD ./entrypoint.sh /entrypoint.sh
-ENTRYPOINT [ "/entrypoint.sh" ]
-
-CMD [ "/usr/sbin/opendkim" ]
+ADD ./execute_opendkim.sh /
+CMD [ "/execute_opendkim.sh" ]
